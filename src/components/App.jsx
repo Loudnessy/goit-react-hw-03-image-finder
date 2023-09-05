@@ -99,7 +99,7 @@ getSearchedImages(this.state.inputValue)
   visible={true}
 />}  
         <ImageGallery elements={searchedElements} click={this.onCardClick}/>
-        {totalPages > 1 && <Button funcForButton={this.onLoadMore}/>}
+        {totalPages > 0 && <Button funcForButton={this.onLoadMore}/>}
         
 {isModalOpen && <Modal imageData={modalData}/>}
         </section>
